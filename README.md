@@ -2,6 +2,17 @@
 
 ------------------------------
 
+# 4th Commit - Updated Chat Window & Input HTML, CSS
+Time Stamp: 9th March 2K23 - 02:24 PM
+
+Status - Building Base Skeleton Phase-1 - HTML & CSS In Progress
+
+1. ChatModule updated by Importing FormsModule from angular for using [(ngModel)] property binding of messageText in ChatInput Component
+2. ChatWindow & ChatInput Components (HTML, CSS & Ts) updated with basic design
+3. ChatMessage Model class updated to include timestamp
+
+------------------------------
+
 # 3rd Commit - Added Chat Component & Refactoring
 Time Stamp: 5th March 2K23 - 03:37 PM
 

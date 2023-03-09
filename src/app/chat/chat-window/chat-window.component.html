@@ -1,1 +1,11 @@
-<p>This is chat-window component.</p>
+<div class="chat-window">
+    <div class="chat-container">
+        <div class="chat-messages">
+            <div *ngFor="let message of messages" class="message" [ngClass]="{ 'sent-message': message.sentBy === 'user', 'received-message': message.sentBy === 'bot' }">
+                <div class="message-text">{{ message.content }}</div>
+                <div class="message-info">{{ message.sentBy }} | {{ message.timestamp | date: 'medium' }}</div>
+            </div>
+        </div>
+        <app-chat-input (messageSent)="onMessageSent($event)"></app-chat-input>
+    </div>
+</div>

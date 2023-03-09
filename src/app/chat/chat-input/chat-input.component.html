@@ -1,1 +1,7 @@
-<p>This is chat-input component.</p>
+
+<div class="chat-input">
+    <input type="text" placeholder="Type a message..." [(ngModel)]="messageText" (keydown.enter)="sendMessage()" />
+    <button class="send-button" (click)="sendMessage()">
+        <i class="fa fa-paper-plane"></i>
+    </button>
+</div>
